@@ -29,7 +29,7 @@ jobs:
         with:
           images: ${{ secrets.DOCKER_USERNAME }}/cloudproject-ci-cd
           tags: |
-            type=raw,value=c-{{sha}}
+            type=raw,value=release-{{sha}}
 
       # Push to your docker hub account
       - name: Build and push Docker image
